@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+	<h2>{{user}}, Bienvenido</h2>
+
+	<!-- Formulario para ingresar mail, ya que twitter no lo retorna -->
+	<form method="POST">{% csrf_token %}
+		<p>
+			<label for="">Usuario</label>
+			<input type="text" name="username">	
+			{{error_username}}			
+		</p>
+		<p>
+			<label for="">Email</label>
+			<input type="text" name="email">
+			{{error_email}}
+		</p>
+		<input type="submit" name="guardar">
+	</form>
+	
+{% endblock contenido %}

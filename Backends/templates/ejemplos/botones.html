@@ -1,0 +1,184 @@
+{% extends "base.html" %}
+
+{% block title %}Botones{% endblock title %}
+
+{% block contenido %}
+<button><a href="javascript:history.go(-1)">Atrás</a></button>
+
+<div class="container">
+	<h2>Botones</h2>	
+	<button class="btn">Base</button>
+	<button class="btn btn-default">Normal</button>
+	<button class="btn btn-primary">Destacado</button>
+	<button class="btn btn-success">Exito</button>
+	<button class="btn btn-info">Información</button>
+	<button class="btn btn-warning">Advertencia</button>
+	<button class="btn btn-danger">Peligro</button>
+	<button class="btn btn-link">Enlace</button>
+
+	<h3>Grandes</h3>
+	<button class="btn">Base</button>
+	<button class="btn btn-default btn-lg">Normal</button>
+	<button class="btn btn-primary btn-lg">Destacado</button>
+	<button class="btn btn-success btn-lg">Exito</button>
+	<button class="btn btn-info btn-lg">Información</button>
+	<button class="btn btn-warning btn-lg">Advertencia</button>
+	<button class="btn btn-danger btn-lg">Peligro</button>
+	<button class="btn btn-link btn-lg">Enlace</button>
+
+	<h3>Estandar</h3>
+	<button class="btn">Base</button>
+	<button class="btn btn-default btn-sm">Normal</button>
+	<button class="btn btn-primary btn-sm">Destacado</button>
+	<button class="btn btn-success btn-sm">Exito</button>
+	<button class="btn btn-info btn-sm">Información</button>
+	<button class="btn btn-warning btn-sm">Advertencia</button>
+	<button class="btn btn-danger btn-sm">Peligro</button>
+	<button class="btn btn-link btn-sm">Enlace</button>
+
+	<h3>Pequeños</h3>
+	<button class="btn">Base</button>
+	<button class="btn btn-default btn-xs">Normal</button>
+	<button class="btn btn-primary btn-xs">Destacado</button>
+	<button class="btn btn-success btn-xs">Exito</button>
+	<button class="btn btn-info btn-xs">Información</button>
+	<button class="btn btn-warning btn-xs">Advertencia</button>
+	<button class="btn btn-danger btn-xs">Peligro</button>
+	<button class="btn btn-link btn-xs">Enlace</button>
+
+	<h3>Bloque</h3>
+	<button class="btn btn-default btn-block">Bloque</button>
+
+	<h3>Botón activado</h3>
+	<button class="btn btn-default active">Bloque</button>
+
+	<h3>Botón deshabilitado</h3>
+	<button class="btn btn-info" disabled="disabled">Desabilitado</button>
+
+	<h3>Etiquetas</h3>
+	<a href="#" class="btn btn-danger">Peligro</a>
+	<button class="btn btn-default">Base</button>
+	<input type="button" class="btn btn-info" value="Información">
+
+	<h3>Grupos de Botones</h3>
+	<div class="btn-group">
+		<button class="btn btn-info">Botón</button>
+		<button class="btn btn-info">Botón</button>
+		<button class="btn btn-info">Botón</button>
+	</div>
+
+	<h3>Toolbar</h3>
+	<div class="btn-toolbar">
+		<div class="btn-group">
+			<button class="btn btn-info">1</button>
+			<button class="btn btn-info">2</button>
+			<button class="btn btn-info">3</button>
+		</div>
+		<div class="btn-group">
+			<button class="btn btn-info">
+				<span class="glyphicon glyphicon-stop"></span>
+			</button>
+			<button class="btn btn-info">
+				<span class="glyphicon glyphicon-backward"></span>
+			</button>
+			<button class="btn btn-info">
+				<span class="glyphicon glyphicon-play"></span>
+			</button>
+			<button class="btn btn-info">
+				<span class="glyphicon glyphicon-forward"></span>
+			</button>
+		</div>
+	</div>
+
+	<h3>Tamaño de grupo de botones</h3>
+	<div class="btn-group btn-group-lg">
+		<button class="btn btn-primary">Grande</button>
+		<button class="btn btn-primary">Grande</button>
+		<button class="btn btn-primary">Grande</button>
+	</div>
+	<div class="btn-group">
+		<button class="btn btn-primary">Normal</button>
+		<button class="btn btn-primary">Normal</button>
+		<button class="btn btn-primary">Normal</button>
+	</div>
+	<div class="btn-group btn-group-sm">
+		<button class="btn btn-primary">Mediano</button>
+		<button class="btn btn-primary">Mediano</button>
+		<button class="btn btn-primary">Mediano</button>
+	</div>
+	<div class="btn-group btn-group-xs">
+		<button class="btn btn-primary">Pequeño</button>
+		<button class="btn btn-primary">Pequeño</button>
+		<button class="btn btn-primary">Pequeño</button>
+	</div>
+
+	<h3>Grupos anidados</h3>
+	<div class="btn-group">
+		<button class="btn btn-primary">1</button>
+		<button class="btn btn-primary">2</button>
+		<button class="btn btn-primary">3</button>
+
+		<div class="btn-group">
+			<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				Botón desplegable <span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="#">Enlace1</a></li>
+				<li><a href="#">Enlace2></a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<h3>Grupo de Botones Verticales</h3>
+	<div class="btn-group-vertical">
+		<button class="btn btn-primary btn-lg">1</button>
+		<button class="btn btn-primary btn-lg">2</button>
+		<button class="btn btn-primary btn-lg">3</button>
+		<button class="btn btn-primary btn-lg">4</button>
+	</div>
+
+	<h3>Grupo de Botones Justificados</h3>
+	<div class="btn-group-justified">
+		<a href="#" class="btn btn-default">Botón</a>
+		<a href="#" class="btn btn-default">Botón</a>
+		<a href="#" class="btn btn-default">Botón</a>
+	</div>
+
+	<h3>Botón Desplegable</h3>
+	<div class="btn-group">
+		<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+			Desplegar <span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+			<li><a href="#">Enlace1</a></li>
+			<li><a href="#">Enlace2</a></li>
+			<li><a href="#">Enlace3</a></li>
+			<li class="divider"></li>
+			<li><a href="#">Enlace4</a></li>
+			<li><a href="#">Enlace5</a></li>
+		</ul>
+	</div>
+
+	<h3>Botón Desplegable Compuesto</h3>
+	<div class="btn-group">
+		<button class="btn btn-info">Desplegar</button>
+		<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+			<li><a href="#">Enlace1</a></li>
+			<li><a href="#">Enlace2</a></li>
+			<li><a href="#">Enlace3</a></li>
+			<li class="divider"></li>
+			<li><a href="#">Enlace4</a></li>
+			<li><a href="#">Enlace5</a></li>
+		</ul>
+	</div>
+
+
+</div>
+
+
+
+{% endblock contenido %}

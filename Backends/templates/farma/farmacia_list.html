@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Farma{% endblock title %}
+
+{% block contenido %}
+
+  <h2>Farmacias</h2>
+    <ul>
+        {% for farmacia in object_list %}
+            <li>{{ farmacia.nombre }}({{ farmacia.direccion }})</li>            
+        {% endfor %}
+    </ul>
+
+
+{% endblock contenido %}
+
+

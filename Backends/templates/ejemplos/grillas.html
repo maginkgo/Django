@@ -1,0 +1,180 @@
+{% extends "base.html" %}
+
+{% block title %}Sistema de grillas{% endblock title %}
+
+{% block contenido %}
+<button><a href="javascript:history.go(-1)">Atrás</a></button>
+
+<h2>Contenedores</h2>
+<p>Elemento que contiene a otros elementos</p>
+
+
+
+<div class="container caja color1">
+	<h3>Container</h3>
+	<p>Tiene margenes que se van ajustando a los tamaños definidos en las media queries</p>
+</div>
+
+<div class="container-fluid caja color2">
+	<h3>Container-fluid</h3>
+	<p>Es flexible, se va adecuando al tamañano de la ventana porque posee un ancho del 100%.</p>
+</div>
+
+<h2>Sistema de Grillas</h2>
+
+<h3>2 columnas</h3>
+<div class="container caja">
+	<div class="row">
+		<div class="col-xs-12 col-sm-4 col-md-6 col-lg-8 color1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil esse natus voluptatem, vel obcaecati blanditiis perferendis veritatis consequatur numquam quis nemo harum? Hic, recusandae adipisci veritatis consectetur ipsam tempore iste!</div>
+		<div class="col-xs-12 col-sm-8 col-md-6 col-lg-4 color2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur fugiat dolores similique ut, nam ipsa minima neque! Exercitationem ex, suscipit facere repellat doloribus praesentium soluta, voluptas, neque beatae saepe nostrum!</div>
+	</div>
+</div>
+
+<h3>Dispositivos muy pequeños (telefonos, hasta 768px)</h3>
+	<h4>2 columnas</h4>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 color1">*</div>
+				<div class="col-xs-6 color2">*</div>				
+			</div>
+		</div>
+	<h4>3 columnas</h4>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-4 color1">*</div>
+				<div class="col-xs-4 color2">*</div>
+				<div class="col-xs-4 color1">*</div>
+			</div>
+		</div>
+	<h4>4 columnas</h4>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-3 color1">*</div>
+				<div class="col-xs-3 color2">*</div>
+				<div class="col-xs-3 color1">*</div>
+				<div class="col-xs-3 color2">*</div>				
+			</div>
+		</div>
+	<h4>5 columnas</h4>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-4 color1">*</div>
+				<div class="col-xs-2 color2">*</div>
+				<div class="col-xs-2 color1">*</div>
+				<div class="col-xs-2 color2">*</div>
+				<div class="col-xs-2 color1">*</div>				
+			</div>
+		</div>
+	<h4>6 columnas</h4>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2 color1">*</div>
+				<div class="col-xs-2 color2">*</div>
+				<div class="col-xs-2 color1">*</div>
+				<div class="col-xs-2 color2">*</div>
+				<div class="col-xs-2 color1">*</div>
+				<div class="col-xs-2 color2">*</div>
+			</div>
+		</div>
+	<h4>7 columnas</h4>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+				<div class="col-xs-1 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+				<div class="col-xs-1 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+				<div class="col-xs-1 color1">*</div>
+			</div>
+		</div>
+	<h4>8 columnas</h4>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-5 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+				<div class="col-xs-1 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+				<div class="col-xs-1 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+				<div class="col-xs-1 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+			</div>
+		</div>
+	<h4>9 columnas</h4>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-4 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+				<div class="col-xs-1 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+				<div class="col-xs-1 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+				<div class="col-xs-1 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+				<div class="col-xs-1 color1">*</div>
+			</div>
+		</div>
+	<h4>10 columnas</h4>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-3 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+				<div class="col-xs-1 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+				<div class="col-xs-1 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+				<div class="col-xs-1 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+				<div class="col-xs-1 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+			</div>
+		</div>
+	<h4>11 columnas</h4>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+				<div class="col-xs-1 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+				<div class="col-xs-1 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+				<div class="col-xs-1 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+				<div class="col-xs-1 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+				<div class="col-xs-1 color1">*</div>
+			</div>
+		</div>
+	<h4>12 columnas</h4>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-1 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+				<div class="col-xs-1 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+				<div class="col-xs-1 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+				<div class="col-xs-1 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+				<div class="col-xs-1 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+				<div class="col-xs-1 color1">*</div>
+				<div class="col-xs-1 color2">*</div>
+			</div>
+		</div>
+<h3>Dispositivos pequeños (tablets, mayor a 768px)</h3>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 color1">Responsive Design</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 color2">Responsive Design</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 color1">Responsive Design</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 color2">Responsive Design</div>
+		</div>
+	</div>
+<h3>Dispositivos medianos (monitores normales, mayor a 992px)</h3>
+<h3>Dispositivos grandes (monitores grandes, mayor a 1200px)</h3>
+
+
+
+{% endblock contenido %}

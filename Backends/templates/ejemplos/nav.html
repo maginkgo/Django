@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block title %}Navs{% endblock title %}
+
+{% block contenido %}
+<button><a href="javascript:history.go(-1)">Atrás</a></button>
+
+<div class="container caja">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">News</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="#">Enlace1</a></li>
+					<li><a href="#">Enlace2</a></li>
+					<li><a href="#">Enlace3</a></li>
+				</ul>
+			</div>	
+		</div>
+	</nav>
+</div>
+
+<div class="container caja">
+	<!--Dropdown-->
+	<h3>Dropdown</h3>
+	<ul class="nav nav-pills nav-justified caja">
+		<li class="active"><a href="#">Inicio</a></li>
+		<li><a href="#">Quienes Somos</a></li>
+		<li><a href="#">Programación</a></li>
+
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				Contacto 
+				<span class="caret"></span> <!--Flecha que indica opciones desplegables-->
+			</a>
+			<ul class="dropdown-menu">
+				<li><a href="#">Links</a></li>
+				<li><a href="#">Links</a></li>
+				<li><a href="#">Links</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+
+<div class="container caja">
+	<!--Pestañas-->
+	<h3>Pestañas </h3>	
+	<ul class="nav nav-tabs caja">
+		<li class="active"><a href="#">Inicio</a></li>
+		<li><a href="#">Quienes Somos</a></li>
+		<li><a href="#">Programación</a></li>
+		<li><a href="#">Contacto</a></li>
+	</ul>
+</div>
+
+<div class="container caja">
+	<!--Pestañas Justificadas-->
+	<h3>Pestañas Justificadas </h3>
+	<ul class="nav nav-tabs nav-justified">
+		<li class="active"><a href="#">Inicio</a></li>
+		<li><a href="#">Quienes Somos</a></li>
+		<li><a href="#">Programación</a></li>
+		<li><a href="#">Contacto</a></li>
+	</ul>
+</div>
+
+<div class="container caja">
+	<!--Botones-->
+	<h3>Botones</h3>
+	<ul class="nav nav-pills">
+		<li class="active"><a href="#">Inicio</a></li>
+		<li><a href="#">Quienes Somos</a></li>
+		<li><a href="#">Programación</a></li>
+		<li><a href="#">Contacto</a></li>
+	</ul>
+</div>
+
+<div class="container caja">
+	<!--Botones Justificados-->
+	<h3>Botones Justificados</h3>
+	<ul class="nav nav-pills nav-justified">
+		<li class="active"><a href="#">Inicio</a></li>
+		<li><a href="#">Quienes Somos</a></li>
+		<li><a href="#">Programación</a></li>
+		<li><a href="#">Contacto</a></li>
+	</ul>
+</div>
+
+<div class="container caja">
+	<!--Botones Verticales-->
+	<h3>Botones Verticales</h3>
+	<ul class="nav nav-pills nav-stacked">
+		<li class="active"><a href="#">Inicio</a></li>
+		<li><a href="#">Quienes Somos</a></li>
+		<li><a href="#">Programación</a></li>
+		<li><a href="#">Contacto</a></li>
+	</ul>
+</div>	
+
+
+{% endblock contenido %}
